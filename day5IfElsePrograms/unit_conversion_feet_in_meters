@@ -1,0 +1,6 @@
+#!/bin/bash -x
+read -p"enter first value in feet"n1
+read -p"enter second value in feet"n2
+sqre='echo$(($n1*$n2))'
+meter='echo"scale=1;$sqre/3.28"|bc'
+echo"rectangle plot of $n1 feet*$n2 feet=$meter meters"
